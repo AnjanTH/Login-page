@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create New Account</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signup-container {
+      margin: 100px auto;
+      width: 350px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      height: 400px;
+
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    #login {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #fff;
+      position: relative;
+      top: 0px;
+    }
+
+    .con {
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      position: relative;
+      top: 10px;
+      font-size: 12px;
+    }
+    .ancor{
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="signup-container">
+    <div class="con">
+      <h1>Create New Account</h1>
+      <form method="post">
+        <input id="user" type="text" name="username" placeholder="Username" required>
+        <input id="password" type="password" name="password" placeholder="Password" required>
+        <input id="check" type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <div class="ancor">
+          <a id="login" href="index.html">Sign Up</a>
+          <a href="index.html">Go Back to Login page</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="scriptlogin.js"></script>
+</body>
+
+</html>
